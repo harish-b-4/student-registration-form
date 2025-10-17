@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Tailwind CSS Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+
+<body>
+
+    <!-- Form -->
+
+    <h1 class="text-4xl text-green-500 text-center mt-10">Student Registration Form</h1>
+
+    <div class="flex justify-center mt-20">
+
+        <form>
+
+            <div class="space-y-6 p-10 shadow-2xl">
+
+                <div>
+                    <label class="text-xl font-medium block mb-3">Name </label>
+                    <input type="text" placeholder="Enter Your Name"
+                        class="border border-gray-400 h-10 w-full rounded-md text-sm p-2" id="name">
+                </div>
+
+
+                <div>
+                    <label class="text-xl font-medium block mb-3">Age </label>
+                    <input type="number" placeholder="Enter Your Age"
+                        class="border border-gray-400 h-10 w-full rounded-md text-sm p-2" id="age">
+                </div>
+
+
+
+                <div>
+                    <label class="text-xl font-medium block mb-3">Email</label>
+                    <input type="email" placeholder="Enter Your Email"
+                        class="border border-gray-400 h-10 w-full rounded-md text-sm p-2" id="email">
+                </div>
+
+                <div>
+                    <label class="text-xl font-medium block mb-3">Password</label>
+                    <input type="email" placeholder="Enter Your Password"
+                        class="border border-gray-400 h-10 w-full rounded-md text-sm p-2" id="password">
+                </div>
+
+
+                <div id="gender">
+                    <label class="text-xl font-medium block mb-3">Gender</label>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <br>
+                    <input type="radio" name="gender" value="Female"> Female
+                </div>
+
+
+                <div>
+                    <label class="text-xl font-medium block mb-3">Course</label>
+                    <select class="border border-gray-400 h-10 w-full rounded-md p-2" id="course">
+                        <option>Web Development FullStack</option>
+                        <option>Java FullStack</option>
+                        <option>Python FullStack</option>
+                        <option>DSA</option>
+                        <option>Cyber Security</option>
+                    </select>
+                </div>
+
+                <div class="grid justify-center">
+                    <button class="bg-green-400 w-80 p-2 mt-10" id="savebtn">Save</button>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- Table -->
+
+    <table class="min-w-full border border-black border-collapse text-center mt-20">
+
+        <thead class="bg-yellow-200">
+            <tr>
+                <td class="border border-gray-400 font-semibold">NAME</td>
+                <td class="border border-gray-400 font-semibold">AGE</td>
+                <td class="border border-gray-400 font-semibold">EMAIL</td>
+                <td class="border border-gray-400 font-semibold">PASSWORD</td>
+                <td class="border border-gray-400 font-semibold">GENDER</td>
+                <td class="border border-gray-400 font-semibold">COURSE</td>
+                <td class="border border-gray-400 font-semibold">ACTION</td>
+            </tr>
+        </thead>
+
+        <tbody id="tablebody">
+            <tr>
+                <td class="border border-gray-400">Harish</td>
+                <td class="border border-gray-400">21</td>
+                <td class="border border-gray-400">muneeswariharish656@gmail.com</td>
+                <td class="border border-gray-400">**********</td>
+                <td class="border border-gray-400">Male</td>
+                <td class="border border-gray-400">Java FullStack</td>
+                <td class="border border-gray-400 py-2"><button class="bg-red-500 py-1 px-2 rounded-md"
+                        onclick="deleteitem(event)">Delete</button></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
