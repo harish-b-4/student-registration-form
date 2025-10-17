@@ -18,6 +18,6 @@ This project is a simple and interactive Student Registration Form built using H
 
 HTML5 – Structure of the form
 
-CSS3 – Styling and layout
+Tailwind CSS – For styling
 
 JavaScript (ES6) – Logic for form validation and data handling
