@@ -13,13 +13,13 @@
 
     <!-- Form -->
 
-    <h1 class="text-4xl text-green-500 text-center mt-10 font-bold">Student Registration Form</h1>
-
     <div class="flex justify-center mt-20">
 
         <form>
 
             <div class="space-y-6 p-10 shadow-2xl">
+
+                <h1 class="text-2xl text-green-500 text-center mt-10 font-bold">Student Registration Form</h1>
 
                 <div>
                     <label class="text-xl font-medium block mb-3">Name </label>
@@ -44,7 +44,7 @@
 
                 <div>
                     <label class="text-xl font-medium block mb-3">Password</label>
-                    <input type="email" placeholder="Enter Your Password"
+                    <input type="password" placeholder="Enter Your Password"
                         class="border border-gray-400 h-10 w-full rounded-md text-sm p-2" id="password">
                 </div>
 
@@ -68,7 +68,7 @@
                     </select>
                 </div>
 
-                <div class="grid justify-center">
+                <div class="flex justify-center">
                     <button class="bg-green-400 w-80 p-2 mt-10" id="savebtn">Save</button>
                 </div>
 
@@ -82,7 +82,7 @@
 
     <!-- Table -->
 
-    <div class="overflow-x-auto mt-20">
+    <div class="overflow-x-scroll mt-20" id="table">
 
         <table class="min-w-full border border-black border-collapse text-center mt-20">
 
