@@ -2,7 +2,6 @@ var inputname = document.getElementById("name")
 var age = document.getElementById("age")
 var email = document.getElementById("email")
 var password = document.getElementById("password")
-var gender = document.getElementById("gender")
 var course = document.getElementById("course")
 
 
@@ -32,6 +31,19 @@ Savebtn.addEventListener("click", function () {
     "<td class='border border-gray-400'>" + course.value + "</td>" +
     "<td class='border border-gray-400 py-2'>" + "<button class='bg-red-500 py-1 px-2 rounded-md' onclick=" + "deleteitem(event)>Delete</button>" + "</td>"
   tablebody.append(row)
+
+
+
+  // Clear the form fields after saving
+  
+  inputname.value = ""
+  age.value = ""
+  email.value = ""
+  password.value = ""
+  course.selectedIndex = 0
+  const gender = document.querySelector('input[name="gender"]:checked')
+  if (gender) gender.checked = false
+
 
 })
 
